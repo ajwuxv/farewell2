@@ -1,0 +1,23 @@
+<html>
+<style>
+     body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-image: url("{{url_for('static',filename='flower.jpg')}}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            }
+</style>
+<body>
+    <form action="/letter" method="POST">
+        Password:
+        <input type="text" name="password"><br><br>
+        <input type="SUBMIT">
+    </form>
+</body>
+</html>

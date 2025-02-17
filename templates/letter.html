@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+.button {
+  background-color: #EC407A;
+  border-radius: 7px;
+  color: white;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align the button to the right */
+    padding: 10px; /* Add some padding to keep it from touching the edge */
+  }
+
+
+body {
+    background-image: url("{{url_for('static',filename='paper.png')}}");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+   }
+</style>
+</head>
+<body>
+    <div class="centered">
+        <img src={{url_for('static',filename='charlotte.png')}} width="1000" height="1300">
+    </div>
+    <br>
+    <br>
+    <div class = "button-container">
+        <a href="{{url_for('vid')}}" class = "button">Next</a>
+    </div>
+</body>
+</html>
+
+
